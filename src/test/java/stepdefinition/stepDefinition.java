@@ -136,23 +136,10 @@ driver.manage().window().maximize();
     	
     	int teamcount=driver.findElements(By.cssSelector(".stack-img-content")).size();
     
-    	
+    	 
     	System.out.println("Team count described on webpage is : " + teamcount);
     	
-    	/*for(int i=0; i<=teamcount; i++) {
-    		
-    		String text=driver.findElements(By.cssSelector(".stack-img-content")).get(i).getText();
-    		
-    		if (text.contains(name1)) {
-    			
-    			System.out.println(name1 + "is correctly displayed on webpage");
-    			
-    		}
-    		
-    		else 
-    		
-    	}*/
-    	
+   	
    
     	String actualname1=driver.findElement(By.xpath("//h2[contains(text(),'John Lord')]")).getText();
     	String actualrole1=driver.findElement(By.xpath("//p[contains(text(),'Founder & CEO')]")).getText();
