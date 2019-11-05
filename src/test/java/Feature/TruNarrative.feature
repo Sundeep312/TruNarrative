@@ -9,9 +9,9 @@ And Verify "Easy Onboarding. Smooth Transactions. Insightful Compliance" is foun
 
 
 Scenario: Validate navigation to team page
-Given navigate to "https://trunarrative.com" site again
-When user click on  "TruNarrative Team"
-Then following "John Lord" and "Founder and CEO" and "David Eastaugh" and "CTO" and "Nicola Janney" and "Human Resources Manager" shall displayed on webpage 
+Given user navigate to "https://trunarrative.com" site again
+When user click on  "TruNarrative Team" link
+Then User shall find "John Lord" and "Founder and CEO" and "David Eastaugh" and "CTO" and "Nicola Janney" and "Human Resources Manager" 
 
 
 

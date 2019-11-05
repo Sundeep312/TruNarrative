@@ -93,14 +93,14 @@ public class stepDefinition {
 
 	}
 
-	@Given("^navigate to \"([^\"]*)\" site again$")
-	public void navigate_to_something_site_again(String url) throws Throwable {
+	@Given("^user navigate to \"([^\"]*)\" site again$")
+    public void user_navigate_to_something_site_again(String url) throws Throwable { 
 
 		driver.get(url);
 	}
 
-	@When("^user click on  \"([^\"]*)\"$")
-	public void user_click_on_something(String requiredText) throws Throwable {
+	@When("^user click on  \"([^\"]*)\" link$")
+    public void user_click_on_something_link(String requiredText) throws Throwable {
 
 		Actions a = new Actions(driver);
 
@@ -126,8 +126,8 @@ public class stepDefinition {
 			System.out.println("Failed to Navigated to TruNarrative team page");
 	}
 
-	@Then("^following \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" shall displayed on webpage$")
-	public void following_and_and_and_and_and_shall_displayed_on_webpage(String name1, String role1, String name2, String role2, String name3, String role3) throws Throwable{
+	@Then("^User shall find \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void user_shall_find_and_and_and_and_and(String name1, String role1, String name2, String role2, String name3, String role3) throws Throwable {
 
 		TeamPage tp = new TeamPage(driver);
 
